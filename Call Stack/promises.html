@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises in JS</title>
+  </head>
+  <body>
+    <h1>Zaheer Abbas</h1>
+
+    <script>
+      function savetoDb(data, success, failure) {
+        let internetSpeed = Math.floor(Math.random() * 10) + 1;
+
+        if (internetSpeed < 5) {
+          success();
+        } else {
+            failure();
+        }
+      }
+
+      savetoDb(
+        "Zaheer abbas",
+        () => {
+          console.log("Success : your Data was saved :");
+          savetoDb("Hello world", () =>{
+            console.log("success2 : data2 saved");
+          }, () =>{
+            console.log("Failure2 : weak connection");
+          });
+        },
+        () => {
+          console.log("Failure: Weak connection and data was not saved");
+        }
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <h1>Zaheer Abbas</h1>
+    <p id="paragraph" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore aspernatur repellat praesentium perspiciatis molestiae nemo ratione numquam, minus beatae, odio fugit provident consequatur. Inventore earum mollitia doloribus cum nulla.</p>
+
+    <p class="para" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore aspernatur repellat praesentium perspiciatis molestiae nemo ratione numquam, minus beatae, odio fugit provident consequatur. Inventore earum mollitia doloribus cum nulla.</p>
+
+
+    <div class="order_list">
+        <ul>
+            <li><a href="#" class="links">Home</a></li>
+            <li><a href="#" class="links">About</a></li>
+            <li><a href="#" class="links">Services</a></li>
+        </ul>
+    
+    
+    </div>
+
+
+
+    <script>
+
+        // Select single element through QuerySelector
+        console.dir(document.querySelector("h1"));
+        console.dir(document.querySelector("#paragraph"));
+        console.dir(document.querySelector(".para"));
+
+        // Select All Elements Through QuerySelectorAll
+        console.dir(document.querySelectorAll("div a"))
+
+        
+    
+    </script>
+</body>
+</html>

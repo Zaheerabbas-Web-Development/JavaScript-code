@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice Method</title>
+    <style>
+        
+table 			      { 
+  border-spacing: 1; 
+  border-collapse: collapse; 
+  background:white;
+  border-radius:6px;
+  overflow:hidden;
+  max-width:800px; 
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  
+  *               { position:relative }
+  
+  td,th           { padding-left:8px}
+
+  thead tr        { 
+    height:60px;
+    background:#FFED86;
+    font-size:16px;
+  }
+  
+  tbody tr        { height:48px; border-bottom:1px solid #E3F1D5 ;
+    &:last-child  { border:0; }
+  }
+  
+ 	td,th 					{ text-align:left;
+		&.l 					{ text-align:right }
+		&.c 					{ text-align:center }
+		&.r 					{ text-align:center }
+	}
+}
+
+
+
+
+
+
+
+body               { 
+  background:#ebede9; 
+  font:400 14px 'Calibri','Arial';
+  padding:20px;
+}
+
+    
+    </style>
+</head>
+<body>
+    <!-- <h2>slice() Method</h2>
+
+    <p>Array.slice() returns selected array elements as a new array:</p>
+
+    <p id="slice"></p>
+
+
+    <script>
+        var fruits = ["Banana", "Apple", "Orange", "Mango", "Lemon"];
+        var new_fruits = fruits.slice(1, 3);
+        document.getElementById('slice').innerHTML = new_fruits;
+    
+    </script> -->
+      <table>
+      <thead>
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Destination</th>
+          <th>Hiace	</th>
+          <th>H1-7</th>
+          <th>Car Camry Sonata	</th>
+          <th>GMC (Old)</th>
+          <th>GMC (New)</th>
+        </tr>
+      <thead>
+      <tbody>
+        <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+         
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+         
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        
+        </tr>
+         <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        
+        </tr>
+          <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+         
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+         
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        
+        </tr>
+         <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        
+        </tr>
+          <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+         
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+         
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          
+        </tr>
+           <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        
+        </tr>
+         <tr>
+          <td>CES-9000</td>
+          <td>50mt</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+          <td>9mm</td>
+          <td>1/2"</td>
+          <td>Kangal / Coil</td>
+        
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>

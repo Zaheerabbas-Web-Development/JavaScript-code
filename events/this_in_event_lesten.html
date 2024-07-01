@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This in event lestener</title>
+</head>
+<body>
+    <button>Submit</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consectetur illo iusto nisi consequatur saepe accusamus dignissimos dolor! Ex quaerat enim qui iste. Iusto qui, error harum vitae voluptas aliquid.</p>
+    <h1>Zaheer Abbas</h1>
+    <h3>I am Student of Computer Sceince</h3>
+
+
+
+    <script>
+
+    // To show the whole button
+    var btn = document.querySelector("button");
+    btn.addEventListener("click", function(){
+        console.log(this)
+    })
+
+
+
+    // To show the text within the button
+    var btn = document.querySelector("button");
+    btn.addEventListener("click", function(){
+        console.log(this.innerText);
+    })
+
+    
+
+    // To change the backgroundColor
+     var btn = document.querySelector("button");
+    btn.addEventListener("click", function(){
+        // console.log(this.innerText);
+        btn.style.backgroundColor = "red";
+    })
+    
+
+
+    // add backgroundColor to paragraph
+    var para = document.querySelector("p");
+    para.addEventListener("click", function(){
+        para.style.backgroundColor = "blue";
+    })
+
+    // when i have multiple elements and i want to apply the same color
+    var h1 = document.querySelector("h1");
+    var h3 = document.querySelector("h3");
+    var p = document.querySelector("p");
+
+
+    function changecolor(){
+        this.style.backgroundColor = "yellow";
+    }
+
+
+    h1.addEventListener("click", changecolor);
+    h3.addEventListener("click", changecolor);
+    p.addEventListener("click", changecolor);
+    </script>
+</body>
+</html>

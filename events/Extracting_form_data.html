@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting Form Data</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Username" id="user">
+        <input type="password" placeholder="password" id="pass">
+        <button>Submit</button>
+    </form>
+
+
+
+
+
+
+
+
+
+    <script>
+        // var form = document.querySelector("form");
+        // form.addEventListener("submit", function(event){
+        //     event.preventDefault();
+            
+
+        // var inpt = document.querySelector("input");
+        // console.dir(inpt);
+        // console.dir(inpt.value);
+        // })
+
+
+
+        var form = document.querySelector("form");
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+
+
+        var user = document.querySelector("#user");
+        var pass = document.querySelector("#pass");
+
+
+        console.log(user.value);
+        console.log(pass.value);
+
+        alert(`Hi ${user.value}, your password is set to ${pass.value}`);
+
+        });
+    </script>
+</body>
+</html>

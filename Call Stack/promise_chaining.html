@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises Chaining</title>
+</head>
+<body>
+    <h1>Zaheer Abbas</h1>
+  
+    <script>
+      function savetoDb(data) {
+        return new Promise((resolve, reject) => {
+          let internetSpeed = Math.floor(Math.random() * 10) + 1;
+          if (internetSpeed > 5) {
+            resolve("Success: Data was saved.");
+          } else {
+            reject("Failure: weak connection");
+          }
+        });
+      }
+
+
+
+      savetoDb("Zaheer Abbas")
+      .then(() =>{
+        console.log("Data1 saved. ");
+        return savetoDb("Welcome the Programming");
+      })
+
+      .then(() =>{
+            console.log("Data2 saved. ");
+        })
+
+      .catch(() =>{
+        console.log("promise was rejected");
+      })
+    </script>
+</body>
+</html>

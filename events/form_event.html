@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Events</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="Username" id="">
+        <button>Submit</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // var form = document.querySelector("form");
+        // form.addEventListener("submit", function(){
+        //     alert("Form was submitted successfully");
+        //     console.log("Form was submitted successfully");
+        // })
+
+
+        // if i want that the when i click on submit button it cannot goto action ulr so we ues preventdefault method
+        var form = document.querySelector("form");
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+            console.log("Form was submitted successfully");
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event lestener in Element</title>
+
+
+</head>
+<body>
+    <button>Click Me!</button>
+    <h1>Zaheer Abbas</h1>
+    <p>My name is zaheer abbas</p>
+
+
+
+
+    <script>
+    let btn = document.querySelector("button");
+    btn.addEventListener("click", function(){
+        console.log("The button was clicked");
+    })
+    
+
+
+    let heading = document.querySelector("h1");
+    heading.addEventListener("mouseenter", function(){
+        console.log("The mouse enter to h1 Heading");
+    })
+
+
+    var para = document.querySelector("p");
+    para.addEventListener("dblclick", function(){
+        console.log("The paragraph was double clicked");
+    })
+    </script>
+</body>
+</html>

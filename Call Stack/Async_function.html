@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Function in JS</title>
+</head>
+<body>
+    <h1>Zaheer Abbas</h1>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        async function greet(){
+            // throw "404 page not found"
+            return "Hello Zaheer";
+        }
+
+        greet()
+        .then((result) =>{
+            console.log("Promise was resolved");
+            console.log("result was ", result)
+        })
+        .catch((error) =>{
+            console.log("weak connection with", error)
+        })
+        
+    </script>
+
+
+
+</body>
+</html>

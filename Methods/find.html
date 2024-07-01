@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Find function</h1>
+    <p>find() returns the value of the first element in an array that passes a test (provided by a function):</p>
+    <p id="find">This is a find funtion</p>
+
+    <script>
+
+        var ages = [20, 30, 40, 50, 60, 65, 68, 70];
+
+        document.getElementById("find").innerHTML = ages.find(checkAge);
+
+        function checkAge(age){
+            return age >= 20;
+            // why the find () only give me the next element in the array
+        }
+    
+    
+    </script>
+</body>
+</html>

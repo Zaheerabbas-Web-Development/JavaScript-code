@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Hell</title>
+</head>
+<body>
+    <h1 id="heading">Zaheer Abbas</h1>
+
+
+
+
+
+
+    <script>
+     
+
+     setTimeout(function() { myFunction("I love You !!!"); }, 3000);
+
+    function myFunction(value) {
+         document.getElementById("heading").innerHTML = value;
+}
+        // h1 = document.querySelector("h1");
+
+        // function changeColor(color, delay, nextColorChange){
+        //     setTimeout(()=>{
+        //         h1.style.color = color;
+        //         if(nextColorChange) nextColorChange();
+        //     }, delay);
+        // }
+
+
+        // changeColor("red", 1000, () => {
+        //     changeColor("green", 1000, () =>{
+        //         changeColor("Yellow", 1000);
+        //     });
+            
+        // });
+       
+       
+
+
+
+        // setTimeout(() => {
+        //     h1.style.color = "blue";
+        // }, 1000);
+
+        // setTimeout(() => {
+        //     h1.style.color = "red";
+        // }, 2000);
+
+
+        // setTimeout(() => {
+        //     h1.style.color = "yellow";
+        // }, 3000);
+
+
+
+    </script>
+</body>
+</html>
